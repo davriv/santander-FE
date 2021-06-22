@@ -1,5 +1,5 @@
 body{
-    background-color: #fffbf7;
+    background-color: #000ba5;
 }
 
 h1{
@@ -15,7 +15,7 @@ h2,h4{
     text-align: center;
 }
 
-p{
+.contenedor_text > p {
     color: #8b8b8bcc;
     font-family: Verdana;
 }
@@ -106,4 +106,29 @@ img{
     margin-right: 25px;
     margin-left: 25px;
   }
-
+  .publish {
+    /* container styles if any */
+  }
+  
+  .publish h6 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+  }
+  
+  .publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .publish > form {
+    display: flex;
+  }
+  
+  .publish > form p {
+    color: #025157;
+    margin-right: 18px;
+  }
