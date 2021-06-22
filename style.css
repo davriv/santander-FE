@@ -2,6 +2,11 @@ body{
     background-color: #fffbf7;
 }
 
+main {
+  margin-top: 285px;
+  text-align: center;
+}
+
 h1{
     color:rgba(124, 124, 212, 0.685);
     font-size: 40px;
@@ -49,6 +54,15 @@ img{
     line-height: 45px; 
     /*height: 45px; */
     font-family: sans-serif;
+  }
+
+  .fixed-header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
   }
 
   li {
@@ -107,3 +121,57 @@ img{
     margin-left: 25px;
   }
 
+  .publish {
+    /* container styles if any */
+  }
+  
+  .publish h6 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+  }
+  
+  .publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .publish > form {
+    display: flex;
+  }
+  
+  .publish > form p {
+    color: #025157;
+    margin-right: 18px;
+  }
+
+  .publish > form button {
+    background-color: #025157;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .publish {
+    margin-left: 18px;
+  }
+
+  .promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+  }
+
+  .explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+  }
