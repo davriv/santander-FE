@@ -1,0 +1,70 @@
+.container{ 
+    display: flex;
+    width: 400px;
+    height: 400px;
+    /* flex-direction: column;
+    flex-direction: row; */
+
+    /* flex-wrap: nowrap;
+    flex-wrap: wrap; */
+    background: rgb(5, 96, 170);
+  }
+  
+  .container > .item {
+      background: #777;
+      width: 30%;
+      height: 30px;
+  }
+
+  .main{
+      display:flex;
+  }
+
+/*   .main div:nth-of-type(1){
+      flex-grow: 1;
+  }
+
+  .main div:nth-of-type(4){
+    flex-grow: 1;
+  }
+
+  #main div:nth-of-type(1) {           
+    flex-grow: 1;      
+  }
+  
+  #main div:nth-of-type(2) {
+    flex-grow: 3;
+  }
+  
+  #main div:nth-of-type(3) {  
+    flex-grow: 1;
+  }
+  
+  #main div:nth-of-type(4) {
+    flex-grow: 1;
+  }
+   flex-shrink  /*-> Decremente su medida inicial el numero de veces que se le indique */
+/*   #main div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
+  }
+  
+  #main div:nth-of-type(2) {
+    flex-shrink: 3;
+  }
+  flex-basis /* Establezca la longitud inicial del item */
+  /* #main div {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50px;
+  }
+  
+  #main div:nth-of-type(2) {
+    flex-basis: 100px;
+  } */
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
