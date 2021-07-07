@@ -1,0 +1,22 @@
+{
+  "name": "santanderfront",
+  "version": "1.0.0",
+  "description": "git init\r ​\r # Preparar archivos que se convertirán en commit\r git add .\r ## El punto es para agregar todos los archivos modificados\r ​\r # Crear commit con su mensaje\r git commit -m \"Aqui va el mensaje\"\r ​\r # Agregar remoto \"Solo la primera vez\"\r git remote add origin https://github.com/andres2093/santander-front.git\r ​\r # Enviar commits al servidor de GitHub\r git push -u origin master",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davriv/santander-FE.git"
+  },
+  "author": "David R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davriv/santander-FE/issues"
+  },
+  "homepage": "https://github.com/davriv/santander-FE#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}

@@ -26,21 +26,33 @@ p{
     font-family: Verdana;
 }
 
-button{
-   color:  #fff;
-   background-color: chocolate;
+.container-formu button{
+  color:  #fff;
+  background-color: #025157;
+  border-radius: 5px;
 }
 
-.container{
+.collapse button{
+  color:  #fff;
+  background-color: #025157;
+  border-radius: 5px;
+}
+
+.container-formu{
     width: 500px;
-    background-color: rgba(255, 245, 238, 0.616);
+    background-color: #31926d;
     margin: auto;
     border-radius: 10px;
 }
-form{
+.container-formu .form{
     margin-left: 50px;
 }
-img{
+
+form{
+  margin-left: 50px;
+}
+
+.container-formu .banner .img{
     width: 200px;
     display: inline-block;
     margin: auto;
@@ -59,7 +71,6 @@ img{
 
   .fixed-header{
     position: fixed;
-    background-color: white;
     top: 0;
     left: 0;
     right: 0;
@@ -83,12 +94,12 @@ img{
     width: 15%;
   }
 
-  .navbar {
+/*   .navbar {
     width: 70%;
     text-align: center;
     color: #025157;
     font-weight: 500;
-  }
+  } */
 
   .actions {
     width: 15%;
@@ -106,7 +117,7 @@ img{
     color: #67b54b;
   }
 
-  .actions button {
+  .actions button{
     color: white;
     background-color: #67b54b;
     padding-left: 14px;
@@ -123,9 +134,9 @@ img{
     margin-left: 25px;
   }
 
-  .publish {
-    /* container styles if any */
-  }
+  /*.publish {
+     container styles if any 
+  } */
   
   .publish h6 {
     margin: auto;
@@ -396,8 +407,10 @@ img{
   }
   
   .features .feature-card .feature-image {
+    display: inline-flex;
+    margin: auto;
     flex: 2;
-    width: 50%;
+    width: 70%;
     position: relative;
     right: -50px;
     height: 80%;
@@ -546,4 +559,119 @@ img{
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   text-align: left;
+}
+
+/** Responsive design */
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+  /* .navbar, .actions{
+    display: none;
+  } */
+  main {
+    margin-top: 40px;
+  }
+  h1 {
+    font-size: 30px;
+    margin-top: 85px;
+  }
+  .banner > img {
+    width: 100%;
+  }
+  .container > form {
+    flex-direction: column;
+  }
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .publish > form > div > input {
+    width: 65%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .explanatory-video > video {
+    width: 100%;
+  }
+
+  .publish {
+    margin-top: 10px;
+  }
+
+  .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .feature-image {
+    display: none;
+  }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+  
+}
+
+/* .carousel-inner > .carousel-item > img {
+  max-height: 500px;
+  object-fit: cover;
+} */
+
+.jumbotron-fluid .container h1 {
+  color:#226908;
+}
+
+.jumbotron-fluid .container p {
+  color:gray;
+  text-align: center;
+}
+
+.jumbotron-fluid {
+  background-color: antiquewhite;
+}
+
+.accordion .btn{
+  color:#246909;
+  font-weight: bold;
+}
+
+.slide{
+  margin-top: 50px;
+  margin: auto;
+}
+
+.slide .carousel-inner > img{
+  width: 200px;
+  display: inline-block;
+  margin: auto;
 }
