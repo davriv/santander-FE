@@ -160,6 +160,7 @@ form{
   .publish > form p {
     color: #025157;
     margin-right: 18px;
+    height: 100%;
   }
 
   .publish > form button {
